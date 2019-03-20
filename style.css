@@ -1,0 +1,134 @@
+body {
+  /* font-family: 'Overlock', cursive; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 16px;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  width: 100vw; */
+  padding: 40px;
+  /* overflow-x: hidden; */
+  color: #fff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#form {
+  display: flex;
+  justify-content: space-between;
+}
+#input {
+  flex: 3;
+  margin-right: 20px;
+}
+#generate {
+  flex: 1;
+}
+h1,
+h3 {
+  color: rgb(113, 117, 121);
+}
+
+.hexcolorgenerator-app {
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px;
+  width: 100%;
+  max-width: 960px;
+  /* height: 80vw;
+  width: 80vw; */
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-form-description {
+  width: 50%;
+  /* background: linear-gradient(
+    to right bottom,
+    rgba(230, 238, 238, 0.8),
+    rgba(84, 85, 84, 0.7)
+  ); */
+  border: 2px solid rgba(84, 85, 84, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.generated-color-container {
+  width: 100%;
+  /*border: 1px solid #777;*/
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item {
+  height: 100px;
+  width: 100px;
+  margin: 4px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item:hover {
+  transform: scale(1.07);
+}
+input {
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  letter-spacing: 0.25px;
+  caret-color: rgba(0, 0, 0, 0.8);
+  border: 1.5px solid rgba(84, 85, 84, 0.7);
+}
+
+input::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+.input::-webkit-input-placeholder {
+  color: red;
+  font-size: 15px;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 20px;
+  border: none;
+  background: rgba(0, 140, 255, 0.692);
+  color: white;
+  box-shadow: 0px 6px 12px -4px rgba(87, 86, 86, 0.75);
+}
+
+.title {
+  padding-bottom: 15px;
+}
+#description {
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+button {
+  border-color: aquamarine;
+}
