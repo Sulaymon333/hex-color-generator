@@ -33,6 +33,7 @@ body {
 }
 h1,
 h3 {
+  color: rgb(35, 138, 241);
   color: rgb(113, 117, 121);
 }
 
@@ -56,6 +57,11 @@ h3 {
     to right bottom,
     rgba(230, 238, 238, 0.8),
     rgba(84, 85, 84, 0.7)
+  ); */
+  /* background: linear-gradient(
+    to right bottom,
+    rgba(226, 201, 201, 0.925),
+    rgba(85, 151, 85, 0.7)
   ); */
   border: 2px solid rgba(84, 85, 84, 0.7);
   padding: 30px;
@@ -111,14 +117,25 @@ input[type='number']::-webkit-outer-spin-button {
 button {
   width: 60%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   outline: 0;
   font-family: inherit;
   font-size: 20px;
   border: none;
-  background: rgba(0, 140, 255, 0.692);
+  background: linear-gradient(
+    to right,
+    rgba(46, 157, 248, 0.781),
+    rgba(0, 140, 255, 0.89)
+  );
+
   color: white;
   box-shadow: 0px 6px 12px -4px rgba(87, 86, 86, 0.75);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scaleX(1.1);
+  transition: transform 0.7s ease-in-out;
 }
 
 .title {
@@ -127,8 +144,4 @@ button {
 #description {
   padding-top: 15px;
   font-size: 13px;
-}
-
-button {
-  border-color: aquamarine;
 }
