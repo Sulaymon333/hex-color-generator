@@ -29,8 +29,26 @@ form.addEventListener('submit', e => {
 // generated color DIVs click to copy event listener
 hexadecimalGenWrapper.addEventListener('click', e => {
   if (e.target.className === 'flex-item') {
+    let copied = e.target.childNodes[1].childNodes[1];
     const hexValue = e.target.innerHTML;
-    copyToClipboard(hexValue);
+    copyToClipboard(hexValue.slice(0, 7));
+    copied.innerHTML = 'Copied';
+    copied.style.backgroundColor = 'green';
+    copied.style.padding = '0 18px';
+
+    // fadeout effect
+    let fadeOutEffect = setInterval(function() {
+      if (copied.opacity > 0) {
+        copied.style.opacity -= 0.006;
+      } else {
+        clearInterval(fadeOutEffect);
+      }
+    }, 1);
+    setTimeout(() => {
+      copied.innerHTML = 'click to copy';
+      copied.style.padding = '0 5px';
+      copied.style.backgroundColor = 'transparent';
+    }, 1200);
   }
 });
 
@@ -52,12 +70,16 @@ function randomColors() {
     colorDiv.classList.add('flex-item');
     colorDiv.style.backgroundColor = `${hexColorGen()}`;
     colorDiv.innerHTML = `${hexColorGen()}`;
+    colorDiv.innerHTML +=
+      '<div class="copy"><i title="click to copy" class="copy-icon far fa-copy"></i><span class="copy-message">click to copy</span></div>';
     randomGeneratedColorContainer.appendChild(colorDiv);
   }
   // change generate button content to reset
   generateButton.innerHTML = 'Reset';
+  input.setAttribute('disabled', 'true');
   generateButton.addEventListener('click', () => {
     generateButton.innerHTML = 'Generate';
+    input.removeAttribute('disabled');
   });
 }
 
