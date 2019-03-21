@@ -4,7 +4,7 @@ This app is developed as part of my 6 months coding bootcamp at Integrify Helsin
 
 ## Demo
 
-You can see the live demo of the App here: https://sulaymon333.github.io/bmi-calculator-app/
+You can see the live demo of the App here: https://sulaymon333.github.io/hex-color-generator/
 ![Hex-color generator demo](asset/bmi-calculator-app-demo2.gif)
 
 ## Au
