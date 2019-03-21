@@ -1,5 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css?family=Megrim'); */
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Megrim');
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,19 +17,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 100vh;
-  width: 100vw; */
   padding: 40px;
-  /* overflow-x: hidden; */
   color: #fff;
   background: rgba(228, 228, 228, 0.801);
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /* height: 100vh;
+  width: 100vw; */
+  /* overflow-x: hidden; */
 }
 
 #form {
@@ -58,9 +59,6 @@ h3 {
   padding: 15px;
   width: 100%;
   max-width: 1200px;
-  /* height: 80vw;
-  width: 80vw; */
-  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,17 +66,6 @@ h3 {
 }
 .title-form-description {
   width: 50%;
-  /* background: linear-gradient(
-    to right bottom,
-    rgba(230, 238, 238, 0.8),
-    rgba(84, 85, 84, 0.7)
-  ); */
-  /* background: linear-gradient(
-    to right bottom,
-    rgba(226, 201, 201, 0.925),
-    rgba(85, 151, 85, 0.7)
-  ); */
-  /* border: 2px solid rgba(84, 85, 84, 0.7); */
   background: white;
   padding: 50px;
   border-radius: 10px;
@@ -88,7 +75,6 @@ h3 {
 
 .generated-color-container {
   width: 100%;
-  /*border: 1px solid #777;*/
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +151,7 @@ button:hover {
   font-size: 13px;
 }
 
+/* Elements generated from javaScript */
 .copy {
   opacity: 0;
   transition: 0.2s ease-in-out;

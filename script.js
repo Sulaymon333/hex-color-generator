@@ -48,7 +48,7 @@ hexadecimalGenWrapper.addEventListener('click', e => {
       copied.innerHTML = 'click to copy';
       copied.style.padding = '0 5px';
       copied.style.backgroundColor = 'transparent';
-    }, 1200);
+    }, 800);
   }
 });
 
