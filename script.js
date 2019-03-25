@@ -1,4 +1,7 @@
-// DOM Variables
+// TODO:
+// create a dynamic array
+// make the font color rainbow
+// DOM elements
 const hexadecimalGenWrapper = document.querySelector('.hexcolorgenerator-app');
 const form = document.querySelector('#form');
 const input = document.querySelector('#input');

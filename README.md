@@ -1,15 +1,24 @@
-# Developing an interactive BMI calculator
+# Interactive Hex-color Generator App
 
-This app is developed as part of my 6 months coding bootcamp at Integrify Helsinki. It is about implementing a mini-project in this case an interactive BMI calculator App by using javaScript fundamentals and DOM manipulation techniques. All functionalities was completed with ONLY Vanilla JavaScript. Happy Coding 😀.
+This app is developed as part of my 6 months coding bootcamp at Integrify Helsinki. It is about implementing a random hex-color generator using javaScript fundamentals and DOM manipulation techniques. All functionalities was completed with ONLY Vanilla JavaScript. Happy Coding 😀.
 
 ## Demo
 
-You can see the live demo of the App here: https://sulaymon333.github.io/hex-color-generator/
-![Hex-color generator demo](asset/bmi-calculator-app-demo2.gif)
+You can see the live demo of the App here:
 
-## Au
+[(https://sulaymon333.github.io/hex-color-generator/)](https://sulaymon333.github.io/hex-color-generator/)
+
+# <p align="center"><img src="img/demo.png"/></p>
+
+## Author
 
 Sulaymon Tajudeen. [Learn More](https://sulaymontajudeen.com/)
+
+## Technologies
+
+- HTML
+- CSS
+- javaScript (Vanilla)
 
 ## License
 
